@@ -1,0 +1,82 @@
+{
+  "sourceFilename": "LDEM_80S_80MPP_ADJ.tiff",
+  "sourceBytes": 189158392,
+  "driver": "GTiff",
+  "dimensions": [
+    7600,
+    7600
+  ],
+  "bands": 1,
+  "sourceDtype": "float32",
+  "crsWkt": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+  "crsAuthority": {
+    "projected": "IAU:30135",
+    "geographic": "IAU:30100"
+  },
+  "rasterBoundsProjected": [
+    -304000.0,
+    -304000.0,
+    304000.0,
+    304000.0
+  ],
+  "pixelSizeMeters": [
+    80.0,
+    80.0
+  ],
+  "elevationUnit": "metres (source history states the source grid was multiplied by 1000)",
+  "nodata": "NaN",
+  "sourceElevationRangeMeters": [
+    -7295.51708984375,
+    7026.3310546875
+  ],
+  "selectedWindowPixels": [
+    4152,
+    3256,
+    256,
+    256
+  ],
+  "selectedProjectedBoundsMeters": [
+    28160.0,
+    23040.0,
+    48640.0,
+    43520.0
+  ],
+  "selectedGeographicBoundsDegrees": {
+    "longitude": [
+      32.9052429229879,
+      64.6538240580533
+    ],
+    "latitude": [
+      -88.80016205090513,
+      -87.84787053727356
+    ]
+  },
+  "selectedElevationRangeMeters": [
+    -4247.67822265625,
+    -2197.694580078125
+  ],
+  "candidatePatchMeanSlopeDegrees": 0.5928664803504944,
+  "candidatePatchMaxSlopeDegrees": 1.4812860488891602,
+  "candidatePatchSizeMeters": [
+    960,
+    960
+  ],
+  "gameTerrain": {
+    "grid": [
+      256,
+      256
+    ],
+    "horizontalExtentMeters": [
+      20480,
+      20480
+    ],
+    "sourceElevationMetersUnmodified": true,
+    "runtimeVerticalScale": "0.012 game units per source metre",
+    "runtimeHorizontalScale": "1 game unit per source pixel (80 m)",
+    "normalizationMinMeters": -4247.67822265625,
+    "normalizationMaxMeters": -2197.694580078125,
+    "heightmap": "heightmap.png",
+    "rawElevation": "elevation.f32",
+    "gameElevation": "game_elevation.f32"
+  }
+}

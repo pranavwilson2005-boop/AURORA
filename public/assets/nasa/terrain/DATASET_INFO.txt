@@ -1,0 +1,25 @@
+AURORA lunar terrain dataset notes
+
+Original file: LDEM_80S_80MPP_ADJ.tiff (189,158,392 bytes)
+Dataset: NASA Lunar Orbiter Laser Altimeter (LOLA), south-polar elevation model.
+Raster CRS: None — Moon (2015) Ocentric South Polar Stereographic.
+Dimensions: 7600 × 7600, float32, 80 m pixel spacing.
+Verified projected bounds (m): (-304000.0, -304000.0, 304000.0, 304000.0).
+Selected crop: pixel window 4152,3256, 256 × 256; geographic corner envelope
+lon 32.90524…64.65382°, lat -88.80016…-87.84787°.
+Selection: lowest mean slope among fully valid ~960 m windows in a coarse scan;
+measured candidate mean slope 0.593°, max 1.481°. This is a
+gameplay convenience only and is not a scientifically safe landing-site assessment.
+
+Processing: crop at native 80 m sampling; reject any crop containing non-finite
+NoData; save source elevation as little-endian float32; create a 16-bit normalized
+PNG for visualization/inspection. Runtime geometry uses raw elevation.f32 and
+retains original metre values. The visual preview is generated hillshade/tint.
+The output's fictional buildings, roads, texture and surface dressing are game art,
+not NASA measurements. The normalized PNG maps crop min to 0 and max to 65535.
+
+Source metadata reports NaN fill, the z range and history `... 1000.0 MUL`.
+Attribution: NASA/GSFC/Arizona State University, Lunar Reconnaissance Orbiter
+Lunar Orbiter Laser Altimeter (LOLA). See the original file metadata and NASA PDS
+for authoritative dataset provenance and science context.
+NASA PGDA product listing: https://pgda.gsfc.nasa.gov/products/90
